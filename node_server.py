@@ -323,5 +323,7 @@ def announce_new_block(block):
                       data=json.dumps(block.__dict__, sort_keys=True),
                       headers=headers)
 
+
 # Uncomment this line if you want to specify the port number in the code
-#app.run(debug=True, port=8000)
+if __name__ == '__main__':
+    app.run(debug=True, port=8000)
